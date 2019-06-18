@@ -1,4 +1,4 @@
-package pl.swozniak.didemo.repositories;
+package pl.swozniak.didemo.services;
 
 
 public interface GreetingRepository {
