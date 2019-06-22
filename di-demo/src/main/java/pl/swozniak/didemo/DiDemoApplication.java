@@ -10,7 +10,7 @@ import pl.swozniak.didemo.controllers.PropertyInjectedController;
 import pl.swozniak.didemo.controllers.SetterInjectedController;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"pl.swozniak.services", "pl.swozniak.didemo"})
+//@ComponentScan(basePackages = {"pl.swozniak.didemo.services", "pl.swozniak.didemo"})
 public class DiDemoApplication {
 
     public static void main(String[] args) {

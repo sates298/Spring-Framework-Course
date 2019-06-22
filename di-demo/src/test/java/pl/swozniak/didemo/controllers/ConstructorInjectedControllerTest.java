@@ -2,7 +2,7 @@ package pl.swozniak.didemo.controllers;
 
 import org.junit.Before;
 import org.junit.Test;
-import pl.swozniak.services.GreetingServiceImpl;
+import pl.swozniak.didemo.services.GreetingServiceImpl;
 
 import static org.junit.Assert.assertEquals;
 

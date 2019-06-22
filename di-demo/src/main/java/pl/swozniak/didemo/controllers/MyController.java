@@ -1,7 +1,7 @@
 package pl.swozniak.didemo.controllers;
 
 import org.springframework.stereotype.Controller;
-import pl.swozniak.services.GreetingService;
+import pl.swozniak.didemo.services.GreetingService;
 
 @Controller
 public class MyController {
