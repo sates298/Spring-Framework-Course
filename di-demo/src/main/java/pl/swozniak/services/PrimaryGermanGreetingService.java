@@ -1,4 +1,4 @@
-package pl.swozniak.didemo.services;
+package pl.swozniak.services;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;

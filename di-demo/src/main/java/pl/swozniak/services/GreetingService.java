@@ -1,4 +1,4 @@
-package pl.swozniak.didemo.services;
+package pl.swozniak.services;
 
 public interface GreetingService {
     String sayGreeting();

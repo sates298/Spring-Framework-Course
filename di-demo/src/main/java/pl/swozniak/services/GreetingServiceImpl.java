@@ -1,4 +1,4 @@
-package pl.swozniak.didemo.services;
+package pl.swozniak.services;
 
 import org.springframework.stereotype.Service;
 

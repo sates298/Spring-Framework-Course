@@ -3,12 +3,14 @@ package pl.swozniak.didemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import pl.swozniak.didemo.controllers.ConstructorInjectedController;
 import pl.swozniak.didemo.controllers.MyController;
 import pl.swozniak.didemo.controllers.PropertyInjectedController;
 import pl.swozniak.didemo.controllers.SetterInjectedController;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"pl.swozniak.services", "pl.swozniak.didemo"})
 public class DiDemoApplication {
 
     public static void main(String[] args) {
