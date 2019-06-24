@@ -1,9 +1,10 @@
-package pl.swozniak.didemo;
+package pl.swozniak.didemo.lifecyclebean;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
+import pl.swozniak.didemo.lifecyclebean.LifeCycleDemoBean;
 
-@Component
+//@Component
 public class CustomBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

@@ -1,0 +1,16 @@
+pl:
+  jms:
+    username: JMS Username Yaml
+    password: somepass
+    url: SomeUrl
+  username: swozniak Yaml
+  password: somepass
+  dburl: asdfasdf
+
+---
+spring:
+  profiles: de
+
+pl:
+  jms:
+    username: JMS Username Yaml Deutsch
