@@ -1,20 +1,22 @@
 package pl.swozniak.petclinic.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import pl.swozniak.petclinic.model.Speciality;
 import pl.swozniak.petclinic.model.Vet;
-import pl.swozniak.petclinic.services.SpecialityService;
+import pl.swozniak.petclinic.services.SpecialtyService;
 import pl.swozniak.petclinic.services.VetService;
 
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService  {
 
-    private final SpecialityService specialityService;
+    private final SpecialtyService specialtyService;
 
-    public VetMapService(SpecialityService specialityService) {
-        this.specialityService = specialityService;
+    public VetMapService(SpecialtyService specialtyService) {
+        this.specialtyService = specialtyService;
     }
 
     @Override
@@ -38,7 +40,7 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements VetS
         if (object.getSpecialities().size() > 0){
             object.getSpecialities().forEach(speciality -> {
                 if(speciality.getId() == null){
-                    Speciality savedSpecialty = specialityService.save(speciality);
+                    Speciality savedSpecialty = specialtyService.save(speciality);
                     speciality.setId(savedSpecialty.getId());
                 }
             });
