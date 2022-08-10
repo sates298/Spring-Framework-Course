@@ -1,2 +1,2 @@
 # Spring-Framework-Course
-Programy i projekty  z kursu z Udemy
+Programs and project from Udemy course.
